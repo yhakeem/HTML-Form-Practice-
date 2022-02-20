@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generation USA Survey</title>
+</head>
+<body>
+
+  <h1>Generation USA Survey</h1>
+<form action='yoyohakeem@gmail.com' method='GET'>
+  <!-- name -->
+
+  <label for='firstname'>First Name</label>
+  <input type='text' name='firstname' id="firstname">
+   <label for='lastname'>Last Name</label>
+  <input type='text' name='lastname' id="lastname">
+  <br><br>
+  <!--password-->
+  <label for='password'>Enter Password</label>
+  <input type='password' id='password' name='password' required minlength='5' maxlength='10'>
+  <!-- question 1 -->
+  <p>What gender do you identify as?</p>
+  <input type='radio' name='q2' id='male' value='male'>
+   <label for='male'>Male</label>
+  <br>
+  <input type='radio' name='q2' id='female' value='female'>
+  <label for='female'>Female</label>
+  <br>
+  <input type='radio' name='q2' id='trans' value='trans'>
+  <label for='trans'>Trans</label>
+  <br>
+  <input type='radio' name='q2' id='non-binary' value="non-binary">
+  <label for='non-binary'>Non-binary</label>
+  <!--name is same for all, value and ID is same within input and label-->
+  <br><br>
+  
+ 
+  <!-- question 2 -->
+
+  <label for='q2'>What city are you in?</label>
+   <input type='text' list='cities' name='q2' id='q2'value=''>
+  <datalist id='cities'>
+    <option value='Detroit'></option>
+    <option value='Dallas'></option>
+    <option value='Houston'></option>
+    <option value='Washington D.C'></option>
+ </datalist>
+  <!-- question 3-->
+  <p>What did you enjoy learning? (select all that apply)</p>
+  <input type='checkbox' name='q3' id='javascript'>
+  <label for='javascript'>Javascript</label>
+  <input type='checkbox' name='q3' id='css'>
+  <label for='css'>CSS</label>
+  <input type='checkbox' name='q3' id='java'>
+  <label for='java'>Java</label>
+  <input type='checkbox' name='q3' id='SQL'>
+  <label for='SQL'>SQL</label>
+   <input type='checkbox' name='q3' id='github'>
+  <label for='github'>Git/Github</label>
+  <br><br>
+  <!--question4-->
+  <label for='hard'>How hard was this course for you?</label>
+  <br>
+  <!--to put range nunber just type them on outside of input-->
+  0<input type='range' id='hard' list='ticks' name='hard' >10
+  <datalist id='ticks'>
+    <option value="0"></option>
+    <option value="10"></option>
+    <option value="20"></option>
+    <option value="30"></option>
+    <option value="40"></option>
+    <option value="50" ></option>
+    <option value="60"></option>
+    <option value="70"></option>
+    <option value="80"></option>
+    <option value="90"></option>
+    <option value="100" ></option>
+  </datalist>  
+  <br><br>
+  <!--phone number-->
+  <label for='number'>What is your phone number?</label>
+  <br><br>
+  <input type='text' name='number' id='number' pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+  <small>Format: 123-456-7890</small>
+  
+  
+  
+  
+  
+ <br> <br>
+ <input type='submit' value='Fancy Submit Button'> 
+
+</form>
+  
+</body>
+</html>
